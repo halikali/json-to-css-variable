@@ -2,12 +2,21 @@
   "name": "json-to-css-variable",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build --no-content-hash --no-source-maps ./src/css/style.css --no-content-hash --no-source-maps ./src/js/index.js  --no-content-hash --no-source-maps ./src/js/parser.js --no-content-hash --no-source-maps ./src/index.html --dist-dir ./dist "
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@parcel/babel-preset-env": "^2.8.3",
+    "parcel": "^2.8.3"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }

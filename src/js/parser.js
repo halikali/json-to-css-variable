@@ -1,14 +1,4 @@
 export default class Parser {
-  constructor() {}
-
-  #findJson(jsonFile) {
-    fetch(jsonFile)
-      .then((response) => response.json())
-      .then((json) => {
-        this.#parseToJson(json);
-      });
-  }
-
   #parseToJson(obj = {}, initialKey = "") {
     for (const key in obj) {
       const newinitialKey = initialKey ? `${initialKey}-${key}` : key;
@@ -25,6 +15,6 @@ export default class Parser {
   };
 
   attacheToJson(jsonFile) {
-    this.#findJson(jsonFile);
+    this.#parseToJson(jsonFile);
   }
 }
