@@ -1,0 +1,14 @@
+body {
+  background: var(--color-primary);
+}
+
+p {
+  color: var(--text-primary);
+}
+
+button {
+  background: var(--color-primary);
+  color: var(--text-deneme-ada);
+  border-color: var(--deneme-ada);
+  cursor: pointer;
+}

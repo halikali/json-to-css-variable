@@ -1,0 +1,16 @@
+{
+  "deneme": "#000000",
+  "color": {
+    "primary": "black",
+    "secondary": "white",
+    "thirtiary": "red"
+  },
+  "text": {
+    "primary": "#ffffff",
+    "secondary": "#000000",
+    "thirtiary": "#000000",
+    "deneme": {
+      "ada": "red"
+    }
+  }
+}
