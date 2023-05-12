@@ -1,0 +1,17 @@
+{
+  "name": "parserhat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    ".": "./parser.js",
+    "./parser": "./core.js",
+    "./package.json": "./package.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

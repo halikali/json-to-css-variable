@@ -1,0 +1,26 @@
+{
+  "text": {
+    "color": {
+      "primary": "#434242",
+      "secondary": "#434242",
+      "tertiary": "#F3EFE0"
+    },
+    "font": {
+      "family": {
+        "primary": "Poppins",
+        "secondary": "sans-serif"
+      },
+      "size": {
+        "primary": 14,
+        "secondary": 12
+      }
+    }
+  },
+  "common": {
+    "color": {
+      "primary": "#434242",
+      "secondary": "#434242",
+      "tertiary": "#F3EFE0"
+    }
+  }
+}

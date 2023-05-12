@@ -1,15 +1,21 @@
 import Parser from "./parser.js";
-import lightSchema from "../json/light.json";
-import darkSchema from "../json/dark.json";
+import Palette1 from "../json/palette-1.json";
+import Palette2 from "../json/palette-2.json";
+import Palette3 from "../json/palette-3.json";
+import Palette4 from "../json/palette-4.json";
 
-const switchButton = document.getElementById("switch");
+const palette = document.querySelector("#color-palette");
+
 const parser = new Parser();
+parser.attacheToJson(Palette1);
 
-let colorScheme = "light";
+const palettes = {
+  Palette1: Palette1,
+  Palette2: Palette2,
+  Palette3: Palette3,
+  Palette4: Palette4,
+};
 
-parser.attacheToJson(lightSchema);
-
-switchButton.addEventListener("click", () => {
-  colorScheme === "light" ? (colorScheme = "dark") : (colorScheme = "light");
-  parser.attacheToJson(colorScheme === "light" ? lightSchema : darkSchema);
-});
+palette.onchange = function () {
+  parser.attacheToJson(palettes[palette.value]);
+};
