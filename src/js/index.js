@@ -1,4 +1,4 @@
-import Parser from "./parser.js";
+import Parser from "parserhat";
 import Palette1 from "../json/palette-1.json";
 import Palette2 from "../json/palette-2.json";
 import Palette3 from "../json/palette-3.json";
